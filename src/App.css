@@ -1,38 +1,67 @@
-.App {
+#background-map {
+   overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top: 0%;
+    left: 0%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./resources/grand-cumulus-watercolor.png');
+}
+
+#nordansk {
+
+  left: 741px;
+  top: 24px;
+  width: 122px;
+  height: 103px;
+
+  border: 0;
+  outline: none;
+  background-image: url("./resources/nordansk.png");
+  background-repeat: no-repeat;
+  position: absolute;
+ /* left: 657px;
+  top: 24px;
+  width: 206px;
+  height: 170px; */
+  z-index: 1;
+}
+
+#nordansk:hover{
+  background: url("./resources/nordansk-glow.png") no repeat;
+   -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+ -webkit-box-shadow: 0px 0px 30px 0px rgba(255, 255, 174);
+-moz-box-shadow:    0px 0px 30px 0px rgba(255, 255, 174);
+box-shadow:         0px 0px 30px 0px rgba(255, 255, 174);
+
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
   text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
