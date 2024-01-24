@@ -8,7 +8,8 @@ export default function NordanskMapComponent() {
     toggleIsland(!showIsland);  
   }
 
-    return <div id="nordansk" data-toggle="tooltip" data-placement="bottom" title="Nordansk" onClick={handleToggle}>
-      {showIsland && <Island islandID= 'nordansk' />}
+    return <div>
+     {showIsland && <Island islandID= 'nordansk' />}
+    <div id="nordansk" className='map-component' data-toggle="tooltip" data-placement="bottom" title="Nordansk" onClick={handleToggle}></div>
         </div>
 }

@@ -7,7 +7,7 @@
     left: 0%;
     background-size: cover;
     background-position: center;
-    background-image: url('../public//resources/grand-cumulus-watercolor.png');
+    background-image: url('../public/resources/images/grand-cumulus-watercolor.png');
 }
 
 #nordansk {
@@ -16,12 +16,12 @@
   top: 24px;
   width: 122px;
   height: 103px;
-  background: url("../public/resources/nordansk.png") no-repeat;
+  background: url("../public/resources/images/nordansk.png") no-repeat;
   position: absolute;
   z-index: 1;
 }
 
-#nordansk:hover{
+.map-component:hover{
   /*background: url("./resources/nordansk-glow.png") no repeat;*/
    -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -33,15 +33,17 @@ box-shadow:         0px 0px 30px 0px rgba(255, 255, 174);
 }
 
 .details-container{
-  position: absolute;
   overflow: scroll;
+  position: absolute;
+  top: 10%;
+  left: 15%;
   background-color: black;
   color:#fff;
   opacity: 70%;
   z-index: 2;
-  width: 700px;
+  width: 70%;
   height: auto;
-  max-height: 500px;
+  max-height: 80%;
   display: flexbox;
   
 }
@@ -71,4 +73,18 @@ box-shadow:         0px 0px 30px 0px rgba(255, 255, 174);
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.close-button {
+  position: fixed;
+}
+
+#leviathan_university {
+  background: url("../public/resources/images/leviathan-uni-icon.png") no-repeat;
+  position: absolute;
+  left: 889px;
+  top: 566px;
+  width: 37px;
+  height: 32px;
+  z-index: 9;
 }
