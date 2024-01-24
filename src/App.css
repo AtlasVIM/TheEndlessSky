@@ -7,7 +7,7 @@
     left: 0%;
     background-size: cover;
     background-position: center;
-    background-image: url('./resources/grand-cumulus-watercolor.png');
+    background-image: url('../public//resources/grand-cumulus-watercolor.png');
 }
 
 #nordansk {
@@ -16,21 +16,13 @@
   top: 24px;
   width: 122px;
   height: 103px;
-
-  border: 0;
-  outline: none;
-  background-image: url("./resources/nordansk.png");
-  background-repeat: no-repeat;
+  background: url("../public/resources/nordansk.png") no-repeat;
   position: absolute;
- /* left: 657px;
-  top: 24px;
-  width: 206px;
-  height: 170px; */
   z-index: 1;
 }
 
 #nordansk:hover{
-  background: url("./resources/nordansk-glow.png") no repeat;
+  /*background: url("./resources/nordansk-glow.png") no repeat;*/
    -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -40,28 +32,41 @@ box-shadow:         0px 0px 30px 0px rgba(255, 255, 174);
 
 }
 
+.details-container{
+  position: absolute;
+  background-color: black;
+  color:#fff;
+  opacity: 70%;
+  z-index: 2;
+  width: 700px;
+  height: auto;
+  display: flexbox;
+  
+}
+
+
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  
 }
 
-/* Tooltip text */
 .tooltip .tooltiptext {
+  font-size: 12px;
+  height: 16px;
   visibility: hidden;
-  width: 120px;
+  width: 122px;
   background-color: black;
   color: #fff;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
  
-  /* Position the tooltip text - see examples below! */
   position: absolute;
+
   z-index: 1;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }

@@ -1,17 +1,15 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+import Nordansk from './components/map-components/NordanskMapComponent.js'
 
-
-
-function showNordansk() {
-  alert('test');
-}
 
 function App() {
   return (
-    <div class = "container">
-      <div id="background-map"></div>
-      <div class="tooltip" id="nordansk" onClick={showNordansk} border="0"><span class="tooltiptext">Nordansk</span></div>  
+    <div className = "container">
+      <div id="background-map">
+        <Nordansk/>
+      </div>
     </div>
   )
 }
