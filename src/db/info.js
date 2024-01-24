@@ -16,7 +16,8 @@ const db = {
             map :"./resources/nordansk.png",
             mapAltText: "Map of Nordansk",
             symbol : "./resources/nordansk-symbol.png"
-        }
+        },
+        markdown: "./resources/md/nordansk.md"
     }
  }
 
